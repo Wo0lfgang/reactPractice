@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="" id="test"></div>
+
+    <script type="text/javascript" src="../js/react.development.js"></script>
+    <script type="text/javascript" src="../js/react-dom.development.js"></script>
+    <script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        const myId = 'aTgUiGu';
+        const myDate = 'Hello,rEaCt';
+
+        const VDOM = (
+            <div>
+                <h2 className="title" id={myId.toLowerCase()}>
+                    <span style={{color:'white',fontSize:'29px'}}>{myDate.toUpperCase()}</span>
+                </h2>
+                <h2 className="title" id={myId.toUpperCase()}>
+                    <span style={{color:'white',fontSize:'29px'}}>{myDate.toLowerCase()}</span>
+                </h2>
+                <input type="text"/>
+            </div>
+        ) 
+
+        ReactDOM.render(VDOM,document.getElementById('test'));
+    </script>
+</body>
+</html>
