@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="" id="test"></div>
+    <div class="" id="demo"></div>
+
+    <script type="text/javascript" src="../js//react.development.js"></script>
+    <script type="text/javascript" src="../js/react-dom.development.js"></script>
+    <script type="text/javascript" src="../js/babel.min.js"></script>
+
+    <script type="text/babel">
+        const VDOM = (
+            <h1 id="title">
+                <span>Hello,React!</span>
+                </h1>
+        )
+        ReactDOM.render(VDOM,document.getElementById('test'));
+
+        const TDOM = document.getElementById('demo');
+        console.log('虚拟DOM',VDOM);
+        console.log('真实DOM',TDOM);
+        debugger;
+    </script>
+</body>
+</html>
