@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink,Route } from 'react-router-dom'
+import { Link,Route } from 'react-router-dom'
 import About from './components/About'
 import Home from './components/Home'
 import './App.css'
@@ -22,8 +22,8 @@ export default class App extends Component {
                             <div class="list-group">
                                 {/* <a class="list-group-item" href="./about.html">About</a>
                             <a class="list-group-item active" href="./home.html">Home</a> */}
-                                <NavLink activeClassName='newCss' className='list-group-item' to="/about">About</NavLink>
-                                <NavLink activeClassName='newCss' className='list-group-item' to="/home">Home</NavLink>
+                                <Link className='list-group-item' to="/about">About</Link>
+                                <Link className='list-group-item' to="/home">Home</Link>
                             </div>
                         </div>
                         <div class="col-xs-6">
